@@ -73,4 +73,4 @@
 // let firstName = prompt("Enter your first name");
 // let lastName = prompt("Enter your last name");
 // let fullName = firstName + lastName;
-// alert(`Your first name is ${firstName} and your last name is ${lastName}, your full name is ${firstName} ${lastName} `)
+// alert(`Your first name is ${firstName} and your last name is ${lastName}, your full name is ${firstName} ${lastName}`)

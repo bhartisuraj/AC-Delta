@@ -1,60 +1,76 @@
-// let number = 20;
-// if (number % 10 === 0) {
-//   console.log("It is good number")
+// let pencilPrice = 10;
+// let eraserPrice = 5;
+
+// let totalPrice = pencilPrice + eraserPrice;
+
+// console.log("The total price is : ", pencilPrice + eraserPrice,"Rupees.");
+// console.log(`The total price is :  ${totalPrice}Rupees.`);
+
+// let color = "green";
+
+// if (color === "red") {
+//   console.log("STOP");
+// }
+// if (color === "yellow") {
+//   console.log("Slow down");
+// }
+// if (color === "green") {
+//   console.log("Go");
+// }
+
+// let age = 23;
+// if (age >= 18) {
+//   console.log("you can vote");
+// } else if (age == 23) {
+//   console.log("you should vote");
+// }
+
+// let size = "L"
+
+// if (size === "XL") {
+//     console.log("Price is 250");
+// }
+//  else if (size === "L") {
+//     console.log("Price is 200");
+//   }
+//   else if (size === "M") {
+//     console.log("Price is 100");
+//   }
+//   else {
+//     console.log("Price is 50");
+//   }
+
+/* Nested if else*/
+
+// let marks = 79;
+
+// if (marks >= 33 ){
+//     if (marks >= 80) {
+//       console.log("A+ grade")
+//     }
+//     else if (marks >= 70 || marks <= 79) {
+//       console.log("A grade")
+//     }
+
+//     else {
+//       console.log("Just pass class");
+//     }
 // }
 // else {
-//   console.log("It is bad number")
+//   console.log("Better luck next time");
 // }
 
-// let name = prompt("Enter your name");
-// let age = prompt("Enter your age");
-// alert(`Your name is ${name} and your age is ${age}`);
+// let  str = 'apple';
 
-// let quarter = 4;
-// switch(quarter) {
-//     case 1:
-//     console.log("January, February, March");
-//     break;
-//     case 2:
-//     console.log("April, May, June");
-//     break;
-//     case 3:
-//     console.log("July, August, September");
-//     break;
-//     case 4:
-//     console.log("October, November, December");
-//     break; 
-//     default:
-//     console.log("Some error");
-// }
-
-// let text = "Suraj";
-// if (text[0] === "a" || text[0] === "A") {
-//   console.log("Golden String")
+// if((str[0] === 'a') && (str.length > 3))
+// {
+//   console.log("Its a good string")
 // }
 // else {
-//   console.log("Not Golden String")
+//   console.log("Its a bad string")
 // }
 
-// let num1 = 1;
-// let num2 = 2;
-// let num3 = 3;
-// if ((num1 > num2) && (num1 > num3) ) {
-//   console.log("Number 1 is greater")
-// }
-// else if ((num2 > num1) && (num2 > num3)) {
-//   console.log("Number 2 is greater")
-// }
-// else {
-//   console.log("Number 3 is greater")
-// }
-
-// let num1 = 32;
-// let num2 = 47851;
-
-// if ((num1%2) == (num2%2)) {
-//   console.log("numbers have the same last digit which is",num1%10);
-// }
-// else {
-//   console.log("numbers don't have the same last digit");
-// }
+// let firstName = prompt("Enter your first name");
+// let lastName = prompt("Enter your last name");
+// let fullName = firstName + lastName;
+// alert(`Your first name is ${firstName} and your last name is ${lastName}, your full name is ${firstName} ${lastName} `)

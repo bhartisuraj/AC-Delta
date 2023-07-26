@@ -1,15 +1,22 @@
+/*JavaScript part02*/
+
+// console.log("Hello World")
+// console.log("Suraj Bharti")
+
+// let x = 30;
+// let y = 40;
+// console.log("Rs is " + Number(x + y));
+
 // let pencilPrice = 10;
 // let eraserPrice = 5;
-
 // let totalPrice = pencilPrice + eraserPrice;
-
 // console.log("The total price is : ", pencilPrice + eraserPrice,"Rupees.");
 // console.log(`The total price is :  ${totalPrice}Rupees.`);
 
+/* Practice Qs - Traffic Light System*/
 // let color = "green";
-
 // if (color === "red") {
-//   console.log("STOP");
+//   console.log("Stop");
 // }
 // if (color === "yellow") {
 //   console.log("Slow down");
@@ -41,9 +48,7 @@
 //   }
 
 /* Nested if else*/
-
 // let marks = 79;
-
 // if (marks >= 33 ){
 //     if (marks >= 80) {
 //       console.log("A+ grade")

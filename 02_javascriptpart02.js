@@ -137,15 +137,31 @@
 //   console.log("Its a bad string")
 // }
 
-// let num = 17;
-// if((num%3 === 0) && ((num + 1 === 15) || (num - 1 === 11)))
+// let num = 12;
+// if((num%3 === 0) && ((num + 1 == 15) || (num - 1 == 11)))
 // {
 //   console.log("safe");
-// }
-// else { console.log("not safe");
+// } else { 
+//   console.log("not safe");
 // }
 
-/* Practice Qs Switch statement*/
+/************************** truthy and falsy value - Everything in JS is true or false(in boolean context). This doesn't mean their value itself is false or true, but they are treated as false or true if taken in boolean context.**************************/
+
+/************************** Switch statement **************************/
+
+// let color = "red";
+// switch(color) {
+//   case "red": console.log("stop");
+//   break;
+//   case "yellow": console.log("slow down");
+//   break;
+//   case "green": console.log("GO");
+//   break;
+//   default: console.log("Broken Light");
+//   break;
+// }
+
+/************************** Practice Qs Switch statement **************************/
 // let day = 4;
 // switch(day) {
 //   case 1: console.log("Monday");
@@ -166,24 +182,64 @@
 //   break;
 // }
 
-/* Alert & Prompt */
+/************************** Alert & Prompt **************************/
 // let firstName = prompt("Enter your first name");
 // let lastName = prompt("Enter your last name");
 // let fullName = firstName + lastName;
 // alert(`Your first name is ${firstName} and your last name is ${lastName}, your full name is ${firstName} ${lastName}`)
+// console.log(`Your first name is ${firstName} and your last name is ${lastName}, your full name is ${firstName} ${lastName}`)
+// console.warn(`Your first name is ${firstName} and your last name is ${lastName}, your full name is ${firstName} ${lastName}`)
+// console.error(`Your first name is ${firstName} and your last name is ${lastName}, your full name is ${firstName} ${lastName}`)
 
-// let marks = 79;
-// if (marks >= 33 ){
-//     if (marks >= 80) {
-//       console.log("A+ grade")
-//     }
-//     else if (marks >= 70 || marks <= 79) {
-//       console.log("A grade")
-//     }
-//     else {
-//       console.log("Just pass class");
-//     }
+/************************** Practice Question **************************/
+
+// let num = 20;
+// if (num%10 === 0) {
+//   console.log("good");
+// } else {
+//   console.log("bad");
+// }
+
+/****************************************************/
+// let userName = prompt("Enter your name");
+// let userAge = prompt("Enter your age");
+// alert(`${userName} and ${userAge} years old.`);
+
+/****************************************************/
+// let monthInQuarter = 1;
+// switch(monthInQuarter) {
+//   case 1: console.log("January, February, March");
+//   break;
+//   case 2: console.log("April, May, June");
+//   break;
+//   case 3: console.log("July, August, September");
+//   break;
+//   case 4: console.log("October, November, December");
+//   break;
+//   default: console.log("Quarter");
+//   break;
+// }
+
+/****************************************************/
+// let string = "apples";
+// if ((string[0] == "A" || string[0] == "a") && (string.length >= 5))
+// {
+//   console.log("golden");
+// } else { 
+//   console.log("not golden");
+// }
+
+/****************************************************/
+// let a = 5;
+// let b = 15;
+// let c = 10;
+
+// if ((a>b) && (a>c)){
+//   console.log("a is greater")
+// }
+// else if ((b>a) && (b>c)) {
+//   console.log("b is greater")
 // }
 // else {
-//   console.log("Better luck next time");
+//   console.log("c is greater")
 // }

@@ -127,7 +127,7 @@
 //   console.log("Both can't marrage ");
 // }
 
-/* Practice Qs */
+/************************* Practice Qs - if else and logical operators *************************/
 // let  str = 'apple';
 // if((str[0] === 'a') && (str.length > 3))
 // {

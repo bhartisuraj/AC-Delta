@@ -1,61 +1,46 @@
-// let number = 20;
-// if (number % 10 === 0) {
-//   console.log("It is good number")
-// }
-// else {
-//   console.log("It is bad number")
-// }
+/************************ JavaScript part03 ************************/
 
-/*Switch Statement*/
-// let name = prompt("Enter your name");
-// let age = prompt("Enter your age");
-// alert(`Your name is ${name} and your age is ${age}`);
+/************************ String Methods - actions that can be performed on objects. Strings in JavaScript are immutable ************************/
+/************************ str.trim() - Trim whitespaces from both ends of string & returns a new one. ************************/
 
-// let quarter = 4;
-// switch(quarter) {
-//     case 1:
-//     console.log("January, February, March");
-//     break;
-//     case 2:
-//     console.log("April, May, June");
-//     break;
-//     case 3:
-//     console.log("July, August, September");
-//     break;
-//     case 4:
-//     console.log("October, November, December");
-//     break; 
-//     default:
-//     console.log("Some error");
-// }
+let str = "   I love coding  " 
+//let str = prompt("Enter your text")
+console.log(str.trim()); // str.trim() - Trim whitespaces from both ends of string & returns a new one.
+console.log(str.toLowerCase());// str.toLowerCase() - changes text case to lower case
+console.log(str.toUpperCase());// str.toUpperCase() - changes text case to upper case
 
-// let text = "Suraj";
-// if (text[0] === "a" || text[0] === "A") {
-//   console.log("Golden String")
-// }
-// else {
-//   console.log("Not Golden String")
-// }
+/************************ String Methods with Arguments - Arguent is a some value that we pass to the method. (str) ************************/
 
-// let num1 = 1;
-// let num2 = 2;
-// let num3 = 3;
-// if ((num1 > num2) && (num1 > num3) ) {
-//   console.log("Number 1 is greater")
-// }
-// else if ((num2 > num1) && (num2 > num3)) {
-//   console.log("Number 2 is greater")
-// }
-// else {
-//   console.log("Number 3 is greater")
-// }
+console.log(str.indexOf("love")); // Calculates the first letter of defined string(letter l). If asked letter which is not available in string then it will show (-1). 
 
-// let num1 = 32;
-// let num2 = 47851;
+console.log(str.indexOf("o"));// If we ask to search some letter and that letter is present in string more than 1 time, then it will show result for first letter.
 
-// if ((num1%2) == (num2%2)) {
-//   console.log("numbers have the same last digit which is",num1%10);
-// }
-// else {
-//   console.log("numbers don't have the same last digit");
-// }
+console.log(str.toUpperCase().trim());// If we want to apply two methods on any string then we can perform method chaning.
+
+let newStr = "Ilovecoding"
+console.log(newStr.length);
+
+console.log(newStr.slice(1,6))// slice - returns a part of the original string as a new string. Here we give 2 parameter where 1st is starting index and 2nd is ending index. and if we give just starting value the js will assume ending index = newStr.length (newStr.slice(1)) like (newStr.slice(1,newStr.length));
+
+console.log(newStr.slice(-5)) // Of we give value in negative it will assume as total string length - 5.// Mean it will -5 from total length of string ie 11 it will print oding.
+
+console.log(newStr.replace("love", "do")) // .replace() method is used to replace targeted text 1st is what text and 2nd is with what text.
+
+console.log(newStr.replace("o", "x")) // If we try to replace some text which is 2 or more time in sentence then it will replace the text which is in 1st occured text will be replaced.
+
+console.log(newStr.repeat(3)) // Returns a string with the number of copies of a string.
+
+/************************ Practice Qs - chaining method ************************/
+let msg = "help";
+console.log(msg.trim().toUpperCase());
+
+let name = "ApnaCollege";
+console.log(name.slice(4, 9));
+
+console.log(name.indexOf("na"));
+
+console.log(name.replace("Apna", "Our"));
+
+console.log(name.slice(4, 11).replace("l", "t").replace("l", "t"))
+
+/************************ Array (Data Structure) ************************/

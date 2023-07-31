@@ -191,7 +191,7 @@
 // console.warn(`Your first name is ${firstName} and your last name is ${lastName}, your full name is ${firstName} ${lastName}`)
 // console.error(`Your first name is ${firstName} and your last name is ${lastName}, your full name is ${firstName} ${lastName}`)
 
-/************************** Practice Question **************************/
+/************************** Assignment(part02) **************************/
 
 // let num = 20;
 // if (num%10 === 0) {

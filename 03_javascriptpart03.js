@@ -98,7 +98,7 @@ let info = ["suraj", 30, 5.6] // We can store mix elements in array
 // console.log(months);
 
 /************************ IndexOf & includes Method ************************/
-let cars = ["audi", "bmw", "maruti"]
+// let cars = ["audi", "bmw", "maruti"]
 // console.log(cars.indexOf("maruti")) // .indexOf is used to check index of given element if present it will show its index or else it will show -1.
 
 // console.log(cars.includes("bmw")) // .includes is used to check whether the given element is present or not. It gives output as true or false.
@@ -112,3 +112,61 @@ let alpha = ["white", "black"]
 // console.log(primary.concat(secondary, alpha)); // concat is used to add two or more arrays. Merge 2 or more arrays.
 
 // console.log(primary.reverse()); //reverse array list
+
+/************************ Array slice method - copies a portion of an array arrays.slice(a,b) ************************/
+// let colors = ["red", "yellow", "blue", "orange", "pink", "white"];
+// console.log(colors.slice());
+// console.log(colors.slice(2)); //removed starting 2 arrays
+// console.log(colors.slice(2, 4));//specified starting from 2nd arrays till 4th arrays.
+// console.log(colors.slice(-2)); // printed last 2 arrays.
+
+/************************ Array splice method - removes/replace/add elements in place. splice(start, deleteCount(optional),item0...itemN). Major difference between slice and splice is spice changes original array list where as slice do change in copy************************/
+// let colors = ["red", "yellow", "blue", "orange", "pink", "white"];
+// console.log(colors.splice(4)); // get list from starting index 4 till last
+// console.log(colors);
+// console.log(colors.splice(0, 1)); // starting from 0 delete 1 numbers index.
+// console.log(colors);
+// console.log(colors.splice(0, 1, "black", "grey")); // starting from zero delete 1 numbers index and add black and grey in 0th and 1st place.
+// console.log(colors);
+
+/************************ Array sort method - sorts an array ************************/
+
+let colors = ["red", "yellow", "blue", "orange", "pink", "white"];
+// console.log(colors.sort());
+
+let marks = [99, 89, 67, 42, 100]; 
+// console.log(marks.sort()); // sort method don't behave properly on numbers, because sort methods tries to convert it into string and then sorts it.
+
+/************************ Practice Qs - splice(), reverse(), and indexOf("") ************************/
+
+// let months = ["january", "july", "march", "august"];
+// console.log(months);
+// console.log(months.splice(0, 2, "july", "june"));
+// console.log(months);
+
+// let progLang = ["c", "c++", "html", "javascript", "python", "java", "c#", "sql"];
+// console.log(progLang);
+// console.log(progLang.reverse().indexOf("javascript"));
+
+/************************ Arrays References:- stores address not elements in arrays ************************/
+// let arr1 = [1];
+// let arr2 = [1];
+// let copy1 = arr1;
+// console.log(arr1==arr2);
+// console.log(arr1==copy1);
+
+/************************ const array - Constant variable usually dont change but in array we can do so. But we can't completely change the arr which we are creaated using const ************************/
+
+/************************ Nested array - arrays of array ************************/
+let nums = [[2,4],[3,6],[4,8]];
+// console.log(nums);
+// console.log(nums[1][1]);
+
+/************************ Practice Qs - nested arrays ************************/
+
+let nestedArr = [["X", null, "O"],[null, "X", null],["O", null, "X"]]
+
+console.log(nestedArr);
+
+nestedArr[0][1] = "0";
+console.log(nestedArr);

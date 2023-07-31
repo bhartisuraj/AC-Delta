@@ -98,3 +98,17 @@ let info = ["suraj", 30, 5.6] // We can store mix elements in array
 // console.log(months);
 
 /************************ IndexOf & includes Method ************************/
+let cars = ["audi", "bmw", "maruti"]
+// console.log(cars.indexOf("maruti")) // .indexOf is used to check index of given element if present it will show its index or else it will show -1.
+
+// console.log(cars.includes("bmw")) // .includes is used to check whether the given element is present or not. It gives output as true or false.
+
+/************************ Concantenation & Reverse ************************/
+
+let primary = ["red", "yellow", "blue"];
+let secondary = ["orange", "green", "violet"];
+let alpha = ["white", "black"]
+
+// console.log(primary.concat(secondary, alpha)); // concat is used to add two or more arrays. Merge 2 or more arrays.
+
+// console.log(primary.reverse()); //reverse array list

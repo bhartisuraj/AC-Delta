@@ -166,7 +166,59 @@ let nums = [[2,4],[3,6],[4,8]];
 
 let nestedArr = [["X", null, "O"],[null, "X", null],["O", null, "X"]]
 
-console.log(nestedArr);
+// console.log(nestedArr);
 
-nestedArr[0][1] = "0";
-console.log(nestedArr);
+// nestedArr[0][1] = "O";
+// console.log(nestedArr);
+
+/************************** Assignment(part03) **************************/
+
+// let arr = [7, 9, 0, -2];
+// let n = 3;
+// let ans = arr.slice(0,n);
+// console.log(ans);
+
+/****************************************************/
+
+// let arr = [7, 9, 0, -2];
+// let n = 3;
+// let ans1 = arr.slice(arr.length-n);
+// console.log(ans1)
+
+/****************************************************/
+
+// let string = prompt("please enter a string");
+
+// if (string.length == 0)
+// {
+//     console.log("string is blank");
+// }
+// else {
+//     console.log("string is not-blank");
+// }
+
+/****************************************************/
+
+// let myName = "SurAjBharti";
+// if(myName[3] == myName[3].toLowerCase()) {
+//     console.log("character is lowercase");
+// }
+// else {
+//     console.log("character is not lowercase");
+// }
+
+/****************************************************/
+
+// let message = prompt("Enter your message");
+// console.log(`${message}`);
+// console.log(`String without space = ${message.trim()}`);
+
+/****************************************************/
+
+// let arrayList = ["Hello", "a", 2.5, 3];
+// if(arrayList.includes(2.9)) {
+//     console.log(`Element exist`);
+// }
+// else {
+//     console.log(`Element doesn't exist`);
+// }

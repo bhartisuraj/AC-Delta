@@ -3,7 +3,7 @@
 /************************ String Methods - actions that can be performed on objects. Strings in JavaScript are immutable ************************/
 /************************ str.trim() - Trim whitespaces from both ends of string & returns a new one. ************************/
 
-let str = "   I love coding  " 
+// let str = "   I love coding  " 
 //let str = prompt("Enter your text")
 // console.log(str.trim()); // str.trim() - Trim whitespaces from both ends of string & returns a new one.
 // console.log(str.toLowerCase());// str.toLowerCase() - changes text case to lower case
@@ -45,8 +45,8 @@ let str = "   I love coding  "
 
 /************************ Array (Data Structure) Linear collection of things ************************/
 
-let sudents = ["aman", "shradha", "rajat", "suraj"]
-let info = ["suraj", 30, 5.6] // We can store mix elements in array 
+// let sudents = ["aman", "shradha", "rajat", "suraj"]
+// let info = ["suraj", 30, 5.6] // We can store mix elements in array 
 
 // console.log(info) // to view whole array list
 // console.log(info.length) // to check length of array list
@@ -105,9 +105,9 @@ let info = ["suraj", 30, 5.6] // We can store mix elements in array
 
 /************************ Concantenation & Reverse ************************/
 
-let primary = ["red", "yellow", "blue"];
-let secondary = ["orange", "green", "violet"];
-let alpha = ["white", "black"]
+// let primary = ["red", "yellow", "blue"];
+// let secondary = ["orange", "green", "violet"];
+// let alpha = ["white", "black"]
 
 // console.log(primary.concat(secondary, alpha)); // concat is used to add two or more arrays. Merge 2 or more arrays.
 
@@ -131,10 +131,10 @@ let alpha = ["white", "black"]
 
 /************************ Array sort method - sorts an array ************************/
 
-let colors = ["red", "yellow", "blue", "orange", "pink", "white"];
+// let colors = ["red", "yellow", "blue", "orange", "pink", "white"];
 // console.log(colors.sort());
 
-let marks = [99, 89, 67, 42, 100]; 
+// let marks = [99, 89, 67, 42, 100]; 
 // console.log(marks.sort()); // sort method don't behave properly on numbers, because sort methods tries to convert it into string and then sorts it.
 
 /************************ Practice Qs - splice(), reverse(), and indexOf("") ************************/
@@ -158,13 +158,13 @@ let marks = [99, 89, 67, 42, 100];
 /************************ const array - Constant variable usually dont change but in array we can do so. But we can't completely change the arr which we are creaated using const ************************/
 
 /************************ Nested array - arrays of array ************************/
-let nums = [[2,4],[3,6],[4,8]];
+// let nums = [[2,4],[3,6],[4,8]];
 // console.log(nums);
 // console.log(nums[1][1]);
 
 /************************ Practice Qs - nested arrays ************************/
 
-let nestedArr = [["X", null, "O"],[null, "X", null],["O", null, "X"]]
+// let nestedArr = [["X", null, "O"],[null, "X", null],["O", null, "X"]]
 
 // console.log(nestedArr);
 

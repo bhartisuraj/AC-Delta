@@ -123,12 +123,81 @@
 
 /************************ Nested Loops with Nested  Arrays ************************/
 
-let heroes = [
-    ["ironman", "spiderman", "thor"],["superman" ,"wonder woman" ,"flash"]]
+// let heroes = [
+//         ["ironman", "spiderman", "thor"],["superman" ,"wonder woman" ,"flash"]]
+   
+// for (let i = 0; i<heroes.length; i++) {
+//         console.log(`List #${i}`, heroes[i]);
+//         for (let j = 0; j<heroes[i].length; j++) {
+//                 console.log(heroes[i][j])
+//         }
+//         j
+// }
 
-for (let i = 0; i<heroes.length; i++) {
-    console.log(`List #${i}`)
-    for (let j = 0; j<heroes[i].length; j++) {
-            console.log(heroes[i][j])
-    }
-}
+/************************ for of loop : for (element of collection) ************************/
+
+// let fruits = ["mango", "apple", "banana", "litchi", "orange"];
+
+// for(i of fruits) {
+//         console.log(i);
+// }
+
+/************************ Nested for of loop ************************/
+
+// let heroes = [["ironman", "spiderman", "thor"],["superman" ,"wonder woman" ,"flash"]]
+
+// for(list of heroes) {
+//         console.log(list);
+//         for(individualArray of list) {
+//                 console.log(individualArray);
+//         }
+// }
+
+/************************ Just JS Project - to-do app ************************/
+
+// let todo = [];
+
+// let req = prompt("Please enter your request");
+
+// while(true) {
+//         if(req == "quit") {
+//                 console.log("quitting app");
+//                 break;
+//         }
+
+//         if(req == "list") {
+//                 console.log("-----------------------------");
+//                 for(let i=0; i<todo.length; i++) {
+//                         console.log(i, todo[i]);
+//                 }
+//                 console.log("-----------------------------");
+//         } else if(req == "add") {
+//                 let task = prompt("Please enter the task you want to add");
+//                 todo.push(task);
+//                 console.log("task added");
+//         }else if(req == "delete") {
+//                 let idx = prompt("Please enter the task index");
+//                 todo.splice(idx, 1);
+//                 console.log("task deleted");
+//         } else {
+//            console.log("wrong request");     
+//         }
+//         req = prompt("Please enter your request");
+// }
+
+/************************** Assignment(part04) **************************/
+
+/* Write a JS program to delete all occurrences of element 'num' in a given array. 
+        if arr = [1, 2, 3, 4, 5, 6, 2, 3]
+*/
+
+// let arr = [1, 2, 3, 4, 5, 6, 2, 3];
+
+// let num = 2;
+
+// for(let i=0; i<arr.length; i++) {
+//         if(arr[i] == num) {
+//                 arr.splice(i, 1);
+//         }
+// }
+// console.log(arr);

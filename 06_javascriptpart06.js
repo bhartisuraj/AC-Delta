@@ -7,14 +7,14 @@ function hello() {
 // hello();
 
 /************************ if else plus Functions in JS ************************/
-function isAdult() {
-    let age = 15;
-    if(age>17) {
-            console.log("You are an adult");
-    } else {
-            console.log("You are not an adult");
-    }
-}
+// function isAdult() {
+//         let age = 15;
+//         if(age>17) {
+//                 console.log("You are an adult");
+//         } else {
+//                 console.log("You are not an adult");
+//         }
+// }
 // isAdult()
 
 /************************ for loop plus Functions in JS ************************/
@@ -68,3 +68,29 @@ function calcAvg(a, b, c) {
     console.log((a + b + c)/3)    
 }
 // calcAvg(10, 20, 30)
+
+/************************** Create a function that prints the multiplication table of a number. **************************/
+function printTable(table) {
+    for (let i=table; i<=table*10; i = i+table) {
+            console.log(i);
+    }
+}
+//printTable(73)
+
+/************************** Return :- return keyword is used to return some value from the function. **************************/
+
+// Code written after retun statement is un-reachable.
+function sum(a, b) {
+    return(a + b)
+}
+// sum(51, 20)
+
+/************************** Create a function that returns the sum of numbers from 1 to n. **************************/
+
+function getSum(n){
+    let sum = 0;
+    for (let i = 1; i<=n; i++){
+    sum +=i;
+}
+    return sum;
+}

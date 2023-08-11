@@ -47,10 +47,10 @@ function diceRoll() {
 // diceRoll();
 
 /************************** Function with Arguments (numbers)**************************/
-function sum(num1, num2) {
-    let sum = num1 + num2;
-    console.log(sum)
-}
+// function sum(num1, num2) {
+//         let sum = num1 + num2;
+//         console.log(sum)
+// }
 // sum(51, 20)
 
 /************************** Function with Arguments (string and numbers)**************************/
@@ -78,19 +78,117 @@ function printTable(table) {
 //printTable(73)
 
 /************************** Return :- return keyword is used to return some value from the function. **************************/
-
 // Code written after retun statement is un-reachable.
-function sum(a, b) {
-    return(a + b)
-}
-// sum(51, 20)
+// function sum(a, b) {
+    // console.log(sum);
+    // addition = a + b;
+    // console.log(addition);
+//         return(a + b)
+// }
+// let s = sum(51, 25);
+// console.log(s);
 
-/************************** Create a function that returns the sum of numbers from 1 to n. **************************/
+/************************** Create a function that returns the sum of numbers from 1 to n.(if 5 = 1+2+3+4+5) **************************/
+// function getSum(n){
+//         let sum = 0;
+//         for (let i = 1; i<=n; i++){
+//         sum +=i;
+// }
+//         // console.log(sum);
+//         return sum;
+// }
 
-function getSum(n){
-    let sum = 0;
-    for (let i = 1; i<=n; i++){
-    sum +=i;
+/************************** Create a function that returns the concatenation of all strings in an array ***************************/
+
+// let str = ["hi", "hello", "bye", "!"]
+
+// function concat(str) {
+//         let result = "";
+
+//         for(let i=0; i<str.length; i++) {
+//                 result += str[i];
+//         }
+
+//         return result;
+// }
+
+/************************** Scope:- Determines the accessibility of variables, objects, and functions from different parts of the code. 1) Function, 2) Block and 3) Lexical ***************************/
+
+/*If you define any value inside and outside function and  console.log inside function then console.log will take value of inside function but if you don't define any values inside function then console.log will take value from Global Scope*/
+
+// let sum = 54; // Global Scope
+
+// function calSum(a, b) {  
+//         let sum = a + b; //Function Scope
+//         console.log("Function scope " + sum);
+// }
+
+// calSum(20, 50);
+// console.log("Global scope " + sum);
+
+/* Block Scope:- Variables declared inside a {} block cannot be accessed from outside the block*/
+
+// {
+//         let a = 45;
+//         console.log("Inside function scope " + a);
+// }
+// console.log("Outside function scope " + a);
+
+    // for (let i=0; i<=5; i++) {
+    //         console.log("Inside function scope " + i);
+    // }
+
+    // console.log("Outside function scope " + i);
+
+/* Lexical Scope:- a variable defined outside a function can be accessible inside another function defined after the variable declaration*/
+
+//         console.log("Before Initilization Outside scope " + str);
+
+// let str = "outside";
+// console.log("After Initilization Outside scope " + str);
+// {
+    
+//         console.log("2nd function Before Initilization inside scope " + str);
+//         }
+// {
+//         console.log("Before Initilization inside scope " + str);     
+// let str = "inside";
+// console.log("After Initilization inside scope " + str);
+// }
+// {
+    
+// console.log("2nd function After Initilization inside scope " + str);
+// }
+
+/************************ Practice Qs - What will be the output ************************/
+
+// let greet  = "hello";
+// function changeGreet() {
+//         let greet = "namaste";
+//         console.log(greet);
+
+//         function innerGreet() {
+//                 console.log(greet);
+//         }
+// }
+
+// console.log(greet);
+// changeGreet();
+
+/************************ Function Expressions ************************/
+
+let name = "shraddha";
+
+let sum = function(a, b) {
+    // console.log(a+b);
+    return a+b;
 }
-    return sum;
+
+sum(1,2)
+
+/* usually to call this we use function's name but, here we will use variable name ie sum*/
+
+let greeting = function() {
+    console.log("hello");
 }
+greeting()

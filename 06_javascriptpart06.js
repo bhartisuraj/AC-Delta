@@ -239,22 +239,3 @@ function printTable(table) {
 //                 return a*b;
 //         }
 // }
-
-
-let msg1 = function() {
-    console.log("Hello")
-}
-
-
-let msg2 = function() {
-    console.log("World")
-}
-
-msg1()
-msg2()
-function allMsg(msg1, msg2) {
-    console.log(msg1 + "" + msg2)
-    
-}
-
-allMsg(msg1(), msg2())

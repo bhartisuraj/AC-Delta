@@ -2,7 +2,7 @@
 
 /************************ Functions in JS ************************/
 function hello() {
-    console.log("Hello");
+  console.log("Hello");
 }
 // hello();
 
@@ -20,29 +20,29 @@ function hello() {
 /************************ for loop plus Functions in JS ************************/
 
 function print(){
-    for (let i = 0; i<=5; i++) {
-            console.log(i);
-    }
+  for (let i = 0; i<=5; i++) {
+          console.log(i);
+  }
 }
 // print()
 
 /************************** Function that prints a poem **************************/
 function poem2(){
-    console.log("up above world so high");
-    console.log("like a diamond in the sky");
+  console.log("up above world so high");
+  console.log("like a diamond in the sky");
 }
 
 function poem1(){
-    console.log("Twinkle Twinkle, little star");
-    console.log("how i wonder what you are");
+  console.log("Twinkle Twinkle, little star");
+  console.log("how i wonder what you are");
 }
 // poem1()
 // poem2()
 
 /************************** Function that rolls a dice **************************/
 function diceRoll() {
-    let num = (Math.floor(Math.random()*6)+1);
-    console.log(num);
+  let num = (Math.floor(Math.random()*6)+1);
+  console.log(num);
 }
 // diceRoll();
 
@@ -55,7 +55,7 @@ function diceRoll() {
 
 /************************** Function with Arguments (string and numbers)**************************/
 function info(name, age) {
-    console.log(`My name is ${name} and age is ${age}`)
+  console.log(`My name is ${name} and age is ${age}`)
 }
 // info("suraj bharti", 30)
 // info("rohit", 29)
@@ -64,25 +64,25 @@ function info(name, age) {
 
 /************************** Create a function that gives us the average of 3 numbers. **************************/
 function calcAvg(a, b, c) {
-    //avg = (a + b + c)/3;
-    console.log((a + b + c)/3)    
+  //avg = (a + b + c)/3;
+  console.log((a + b + c)/3)    
 }
 // calcAvg(10, 20, 30)
 
 /************************** Create a function that prints the multiplication table of a number. **************************/
 function printTable(table) {
-    for (let i=table; i<=table*10; i = i+table) {
-            console.log(i);
-    }
+  for (let i=table; i<=table*10; i = i+table) {
+          console.log(i);
+  }
 }
 //printTable(73)
 
 /************************** Return :- return keyword is used to return some value from the function. **************************/
 // Code written after retun statement is un-reachable.
 // function sum(a, b) {
-    // console.log(sum);
-    // addition = a + b;
-    // console.log(addition);
+  // console.log(sum);
+  // addition = a + b;
+  // console.log(addition);
 //         return(a + b)
 // }
 // let s = sum(51, 25);
@@ -134,11 +134,11 @@ function printTable(table) {
 // }
 // console.log("Outside function scope " + a);
 
-    // for (let i=0; i<=5; i++) {
-    //         console.log("Inside function scope " + i);
-    // }
+  // for (let i=0; i<=5; i++) {
+  //         console.log("Inside function scope " + i);
+  // }
 
-    // console.log("Outside function scope " + i);
+  // console.log("Outside function scope " + i);
 
 /* Lexical Scope:- a variable defined outside a function can be accessible inside another function defined after the variable declaration*/
 
@@ -147,7 +147,7 @@ function printTable(table) {
 // let str = "outside";
 // console.log("After Initilization Outside scope " + str);
 // {
-    
+  
 //         console.log("2nd function Before Initilization inside scope " + str);
 //         }
 // {
@@ -156,7 +156,7 @@ function printTable(table) {
 // console.log("After Initilization inside scope " + str);
 // }
 // {
-    
+  
 // console.log("2nd function After Initilization inside scope " + str);
 // }
 
@@ -206,23 +206,24 @@ function printTable(table) {
 // }
 
 // multipleGreet(greet, 5)
+// multipleGreet(function(){console.log("namaste");}, 5)
 
 /*Higher Order functions:- Even, Odd number checker*/
 
-// function oddOrEvenFactory(request) {
-//         if(request == "odd") {
-//                 return function(n) {
-//                         console.log(!(n%2 == 0));
-//                 }
-//         } else if (request == "even") {
-//                 return function(n) {
-//                         console.log(n%2 == 0);
-//                 }
-//         } else {
-//                 console.log("wrong request")
-//         }
-// }
-// let request = "odd"; // even
+function oddOrEvenFactory(request) {
+        if(request == "odd") {
+                return function(n) {
+                        console.log(!(n%2 == 0));
+                }
+        } else if (request == "even") {
+                return function(n) {
+                        console.log(n%2 == 0);
+                }
+        } else {
+                console.log("wrong request")
+        }
+}
+let request = "odd"; // even
 
 /* Methods:- Actions that can be performed on an object */
 

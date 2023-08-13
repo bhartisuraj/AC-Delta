@@ -177,18 +177,84 @@ function printTable(table) {
 
 /************************ Function Expressions ************************/
 
-let name = "shraddha";
+// let name = "shraddha";
 
-let sum = function(a, b) {
-    // console.log(a+b);
-    return a+b;
-}
+// let sum = function(a, b) {
+//         // console.log(a+b);
+//         return a+b;
+// }
 
-sum(1,2)
+// sum(1,2)
 
 /* usually to call this we use function's name but, here we will use variable name ie sum*/
 
-let greeting = function() {
-    console.log("hello");
+// let greeting = function() {
+//         console.log("hello");
+// }
+// greeting()
+
+/*Higher Order functions:- A functions that does one or both: takes 1. one or multiple functions as arguments, 2. returns a function*/
+
+// function multipleGreet(func, n) { // higher order function
+//         for(let i=1; i<=n; i++) {
+//                 func();
+//         }
+// }
+
+// let greet = function() {
+//         console.log("hello");
+// }
+
+// multipleGreet(greet, 5)
+
+/*Higher Order functions:- Even, Odd number checker*/
+
+// function oddOrEvenFactory(request) {
+//         if(request == "odd") {
+//                 return function(n) {
+//                         console.log(!(n%2 == 0));
+//                 }
+//         } else if (request == "even") {
+//                 return function(n) {
+//                         console.log(n%2 == 0);
+//                 }
+//         } else {
+//                 console.log("wrong request")
+//         }
+// }
+// let request = "odd"; // even
+
+/* Methods:- Actions that can be performed on an object */
+
+// const calculator = {
+//         num:55,
+
+//         add: function(a, b) {
+//                 return a+b;
+//         },
+//         sub: function(a, b) {
+//                 return a-b;
+//         },
+//         mul: function(a, b) {
+//                 return a*b;
+//         }
+// }
+
+
+let msg1 = function() {
+    console.log("Hello")
 }
-greeting()
+
+
+let msg2 = function() {
+    console.log("World")
+}
+
+msg1()
+msg2()
+function allMsg(msg1, msg2) {
+    console.log(msg1 + "" + msg2)
+    
+}
+
+allMsg(msg1(), msg2())

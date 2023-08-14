@@ -210,20 +210,20 @@ function printTable(table) {
 
 /*Higher Order functions:- Even, Odd number checker*/
 
-function oddOrEvenFactory(request) {
-        if(request == "odd") {
-                return function(n) {
-                        console.log(!(n%2 == 0));
-                }
-        } else if (request == "even") {
-                return function(n) {
-                        console.log(n%2 == 0);
-                }
-        } else {
-                console.log("wrong request")
-        }
-}
-let request = "odd"; // even
+// function oddOrEvenFactory(request) {
+//         if(request == "odd") {
+//                 return function(n) {
+//                         console.log(!(n%2 == 0));
+//                 }
+//         } else if (request == "even") {
+//                 return function(n) {
+//                         console.log(n%2 == 0);
+//                 }
+//         } else {
+//                 console.log("wrong request")
+//         }
+// }
+// let request = "odd"; // even
 
 /* Methods:- Actions that can be performed on an object */
 
@@ -239,4 +239,35 @@ let request = "odd"; // even
 //         mul: function(a, b) {
 //                 return a*b;
 //         }
-// }
+// };
+
+/* Methods(Shorthand) */
+const calculator = {
+  num:55,
+
+  add(a, b) {
+          return a+b;
+  },
+  sub(a, b) {
+          return a-b;
+  }
+};
+
+/************************** Assignment(part06) **************************/
+
+// Write a JavaScript function that returns array elements which is larger than a number
+
+let arr = [8, 9, 10, 1, 2, 3, 4, 5, 6, 7];
+let num = 5;
+
+//elements larger than a number
+
+function getElements(arr, num){
+  for (i=0; i<arr.length; i++) {
+    if (arr[i]>num) {
+      console.log(arr[i]);
+    }  
+  }
+}
+
+getElements(arr,num)

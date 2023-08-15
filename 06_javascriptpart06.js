@@ -326,17 +326,4 @@
 //   }
 // }
 
-// return count;
-// }
-
-//5 Write a JavaScript function to generate arandom number with in a range(start,end).
-
-// let start = 100;
-// let end = 200;
-
-// function numberGenerator(start, end) {
-//   let diff = end - start;
-//   console.log(Math.floor(Math.random() * diff) + start);
-//   return Math.floor(Math.random() * diff) + start;
-// }
-// numberGenerator(start, end)
+// re

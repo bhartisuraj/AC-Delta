@@ -22,3 +22,45 @@
 // function getAvg() {
 //   console.log(this);
 // }
+
+/************************ try and catch :- The try statement allows you to define a block of code to be tested for a block of code to be tested for errors whilt it is being executed. 
+The catch statement allows you to define a block of code to be executed, if an error occurs in the try block.************************/
+
+
+// console.log("Hello1");
+// console.log(a);
+// console.log("Hello2");
+
+
+// console.log("Hello1");
+// let a = 5;
+// try {
+//   console.log(a);
+// }
+// catch(error) {
+//   console.log("caught an error... a is not defined");
+//   console.log(error);
+// }
+// console.log("Hello2");
+
+/************************ Miscellaneous Topic:- ************************/
+//Arrow functions:- Normal functions are standalone functions, But arrow functions are not. They are usually assigned to variable.
+
+const sum = (a, b) => { 
+    console.log(a+b);
+  };
+  
+  const cube = n => {
+    return n*n*n;
+  };
+  
+  const hello = () => {
+    console.log("Hello World");
+  }
+  // If we have single variable in ()parentheses then we can ignore parentheses.
+  
+  /************************ Implicit Return in Arrow Functions:- If any function is not doing much just returning value then we can make compact our arrow function by removing return keyword. and by replacing by {}curly braces by ()parentheses. ************************/
+  
+  const mul = (a, b) => (
+    a*b
+  );

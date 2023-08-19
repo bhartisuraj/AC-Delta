@@ -26,11 +26,9 @@
 /************************ try and catch :- The try statement allows you to define a block of code to be tested for a block of code to be tested for errors whilt it is being executed. 
 The catch statement allows you to define a block of code to be executed, if an error occurs in the try block.************************/
 
-
 // console.log("Hello1");
 // console.log(a);
 // console.log("Hello2");
-
 
 // console.log("Hello1");
 // let a = 5;
@@ -46,21 +44,110 @@ The catch statement allows you to define a block of code to be executed, if an e
 /************************ Miscellaneous Topic:- ************************/
 //Arrow functions:- Normal functions are standalone functions, But arrow functions are not. They are usually assigned to variable.
 
-const sum = (a, b) => { 
-    console.log(a+b);
-  };
+// const sum = (a, b) => { 
+//   console.log(a+b);
+// };
+
+// const cube = n => {
+//   return n*n*n;
+// };
+
+// const hello = () => {
+//   console.log("Hello World");
+// }
+// If we have single variable in ()parentheses then we can ignore parentheses.
+
+/************************ Implicit Return in Arrow Functions:- If any function is not doing much just returning value then we can make compact our arrow function by removing return keyword. and by replacing by {}curly braces by ()parentheses. ************************/
+
+// const mul = (a, b) => (
+//   a*b
+// );
+
+/************************ Set Timeout:- If we have to do some task but after some time or after mention time then we use Set Timeout function. Its an inbuilt function ************************/
+
+// console.log("Hi there!");
+
+// setTimeout(() => {
+//   console.log("Surajkumar");
+// }, 5000);
+
+// console.log("my name is");
+
+/************************ Set Interval:- Set interval is also like set Timeout but runs again and again after, defined interval ************************/
+
+// console.log("Hi there!");
+
+// let timer = setInterval(() => {
+//   console.log("Surajkumar");
+// }, 2000);
+
+// console.log(timer);
+
+// console.log("my name is");
+
+/************************ this with arrow functionsl:- Set interval is also like set Timeout but runs again and again after, defined interval ************************/
+
+// const student = {
+//   name: "aman",
+//   marks: 95,
+//   prop: this, //global scope
+//   getName: function() {
+//     console.log(this);
+//     return this.name;
+//   },
+//   getMarks: () => {
+//     console.log(this); //parent scope
+//     return this.marks;
+//   },
+//   getInfo1: function() {
+//     setTimeout( () => {
+//       console.log(this); //student
+//     }, 2000);
+//   },
+//   getInfo2: function() {
+//     setTimeout( function() {
+//       console.log(this); // window
+//     }, 2000);
+//   },
+// };
+
+// const a = 5; //global scope
+
+/************************ Practice Qs ************************/
+
+// Write an arrow function that returns the square of a number 'n'.
+
+// let getSquare = (n) => {
+//   return n*n
+// };
   
-  const cube = n => {
-    return n*n*n;
-  };
-  
-  const hello = () => {
-    console.log("Hello World");
-  }
-  // If we have single variable in ()parentheses then we can ignore parentheses.
-  
-  /************************ Implicit Return in Arrow Functions:- If any function is not doing much just returning value then we can make compact our arrow function by removing return keyword. and by replacing by {}curly braces by ()parentheses. ************************/
-  
-  const mul = (a, b) => (
-    a*b
-  );
+// Write function that prints "Hello World" 5 times at intervals of 2s each.
+
+
+//    let id = setInterval(()=>{
+//       console.log("Hello World");
+//     }, 2000);
+//     console.log(id);
+
+//     setTimeout(() => {
+//   clearInterval(id);
+// }, 10000);
+
+/************************** Assignment(part07) **************************/
+
+//Qs1.Write an arrow function named arrayAverage that accepts an array of numbers and returns the average of those numbers.
+
+// const arrayAverage = (arr) => {
+//   let total = 0;
+//   for(let number of arr){
+//     total+=number;
+//   }
+//   return total/arr.length;
+// };
+// let arr = [1,2,3,4,5,6];
+// console.log(arrayAverage(arr));
+
+//Qs2. Write an arrow function named isEven()that takes a single number as argument and returns if it is even or not. 
+
+// let num = 4;
+// const isEven = (num) => num % 2 == 0;

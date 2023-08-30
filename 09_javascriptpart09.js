@@ -45,7 +45,36 @@
 
 /************************ Setting Content in Object ************************/
 // innerText:- Shows the visible text contained in a node. Shows text inside defined element. <p>text text text<p>. It shows text from browser display.
-// textContent:- Shows all the full text. This will show text as well as text which are set to hidden. It shows text from editor.
+// textContent:- Shows all the full text. This will show text as well as text which are set to hidden. It shows text from html file / editor.
 // innerHTML:- Show the full markup. It will show text whereas shows if there any another tag is also present in full detail. <p>text text text <a href="https://www.google.com/>text</a> <p>
 
 /************************ Manipulating Attributes ************************/
+//obj.getAttribute( attr ) //know what is its current attribute value
+//obj.setAttribute( attr,val ) //set what is its user wants to set its new attribute and value
+
+// Steps to change spiderman image's id to spidyImg.
+// First we select the object element what we want to change. let spiderImg = document.querySelector("img")
+// To know whats the current value is. spiderImg.getAttribute("id")
+// To change its value spiderImg.setAttribute("id","spidyImg")
+
+/************************ Manipulating Style (with Style attribute) ************************/
+// Change text color to red text in H1
+// let heading = document.querySelector("h1") Selecting element and storing in some variable
+// heading.style.color = "red" Setting color/style to defined element.
+
+// Change anchor tag color of class box to green color
+// let links = document.querySelectorAll(".box a")
+// for (let i=0; i<links.length; i++) {
+//   links[i].style.color = "green"
+// }
+
+/************************ Manipulating Style (using classList) ************************/
+// classList.add() to add new class
+// classList.remove() to remove class
+// classList.contain() to check if class exists
+// classList.toggle() to toggle between add & remove
+
+//To add class - heading.classList.add(green)
+//To remove class - heading.classList.remove(green)
+//To check if that class is present or not - heading.classList.contains(green)
+//Toggle means you can add or remove class. If present then remove, if not present then add - heading.classList.toggle(green)

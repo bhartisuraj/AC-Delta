@@ -79,3 +79,71 @@
 // ie if have to calculate (5+2)/3+1*2 by BODMAS Rule then answer will be 5+2 =7 then 7/3 = 2.3333333333333335 then 1*2 = 2 then 2.3333333333333335 + 2 = 4.666666666666667
 
 //for more click here for mdn docs:- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_precedence
+
+/************************ let keyword in JS ************************/
+//Syntax of declaring variables
+//Anything declared using let variable are change-able;
+
+// let dob = 23;
+// dob = dob + 1;
+// console.log(dob);
+
+/************************ const keyword in JS ************************/
+// values of constants can't be changed with re-assignment & they can't be re-declared.
+
+// const DOY = 1993;
+// DOY = DOY + 1;
+// console.log(DOY);// Error:- Assignment to constant variable.
+
+/************************ var keyword in JS ************************/
+// Old syntax of writing variable.
+// Var has problem with scope etc.
+// Not recommended to use var keyword.
+
+/**************************** Practice Qs ****************************/
+// What is the value of age after the code runs?
+// let age = 23;
+// age + 2;
+// console.log(age); // OP:- 23. because we added 2 but we dosent stored the value
+
+// What is the value of avg after this code runs?
+// let hindi = 80;
+// let english = 90;
+// let math = 100;
+// let avg = (hindi + english + math) / 3;
+// console.log(avg); // OP:- 270/3 = 90
+
+/**************************** Assignment Operator ****************************/
+// let age = 23;
+// age+=1
+// console.log(age); // 24 Because age+=1, means age = current value + 1;
+
+/**************************** Unary Operator ****************************/
+
+//age++ // increment operator increment by 1
+//age-- // decrement operator decrement by 1
+
+// age++ Post-increment and ++age Pre-increment both are increment operator but age++ will first print then increment where as ++age will increment then print.
+// age-- Post-decrement and --age Pre-decrement both are decrement operator but age-- will first print then decrement where as --age will decrement then print.
+
+// let age = 25; 
+// console.log(age++); // 25
+// console.log(age); // 26
+// console.log(++age); // 27
+// console.log(age); // 27
+
+// let x = 5;
+// console.log(x++); // Output is 5 because first printed then incremented.
+
+// let y = 5;
+// console.log(++y); // Output is 6 because first incremented then printed.
+
+/**************************** Practice Qs ****************************/
+// What is the value of each variable in each line of code?
+// let num = 5; //5
+// let newNum = num++; // 5
+// console.log(newNum);
+// newNum = ++num; // 7
+// console.log(newNum);
+
+/**************************** Identifier Rules ****************************/

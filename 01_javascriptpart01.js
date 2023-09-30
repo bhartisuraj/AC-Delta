@@ -147,3 +147,115 @@
 // console.log(newNum);
 
 /**************************** Identifier Rules ****************************/
+// All JavaScript variables must be identified with unique names(identifiers).
+
+// Names must begin with a letter.
+  // let price; - valid
+  // let price123; - valid
+  // let 123price; - not valid
+  // let price$; - valid
+  // let price_; - valid
+  // let _price; - valid
+  // let $price; - valid
+  // let old price; - not valid
+  // let price-; - not valid
+
+// JavaScript is case sensitive(means age and Age are 2 different keywords)
+
+// Reserved words (like JavaScript keywords) CANNOT be used as names.
+  // let let = 5; not valid
+  // let Let = 5; - valid but not recommended
+  // const const = 5;
+  // const Const = 5; - valid but not recommended
+
+/**************************** Case ****************************/
+// camelCase(JS naming convention) - let fullName;
+// snake_case - let full_name;
+// PascalCase - let FullName;
+
+/**************************** Boolean in JS ****************************/
+// Boolean represents a truth value -> true or false / yes or no.
+// true vs True and false vs False both are different.
+// Simply boolean mean value which says yes or no.
+// let age = 23;
+// let isAdult = true;
+// let age = 13;
+// let isAdult = false;
+
+/**************************** Note ****************************/
+// We can change an variable's typeof in Js whereas, in many language we can't change
+// let a = 5;
+// console.log(typeof a); //number
+// a = true;
+// console.log(typeof a); //boolean
+
+/**************************** TypeScript ****************************/
+// TypeScript is sort of next version of JS. 
+// TypeScript is static typed, whereas JavaScript is dynamic typed because in TypeScript variables DataTypes can't be changed and in JavaScript variables DataTypes can be changed.
+// TypeScript is designed by Microsoft.
+
+/**************************** String in JS ****************************/
+// Strings are text or sequence of characters
+// Anything written in quotes are string.
+
+// let name = "Tony Stark";
+// console.log(typeof name);
+// let role = 'ironman';
+// console.log(typeof role);
+// let char = 'a';
+// console.log(typeof char);
+// let num = '23';
+// console.log(typeof num);
+// let empty = '';
+// console.log(typeof empty);
+
+/**************************** String Indices ****************************/
+// JavaScript is (0)zero based index language
+// let name = "TONY STARK";
+// console.log(name[0]); // T
+// console.log(name.length); // 10 (total character length of string)
+// console.log(name[1000]); // undefined
+// console.log(name[name.length-1]);
+
+/**************************** Concatenation ****************************/
+// adding strings together
+// let name1 = "tony" +" " + "stark";
+// console.log(name1);
+// let name2 = "tony" + " stark";
+// console.log(name2);
+
+/**************************** undefined in JS ****************************/
+// undefined is a variable that has not been assignd a value is of type undefined
+// Scenirio where you will say i dont know that time JS will say undefined.\
+
+// let a;
+// console.log(a);
+
+/**************************** null in JS ****************************/
+// The null value represent the intentional absence of any object value. To be explicitly assigned.
+// When we want to tell JS intentionally value is not present that time we assign NULL.
+
+// let b = null;
+// console.log(b);
+
+/**************************** Practice Qs ****************************/
+// Declare your name as a string and print its length in JS?
+let name1 = "suraj";
+console.log(name1.length);
+
+// Declare your first name as a string and print its first character?
+let name2 = "suraj";
+console.log(name2[0]);
+
+// Declare your first name as a string and print its last character
+let name3 = "suraj";
+console.log(name3[name3.length-1]);
+
+// What is the output of following code:-
+ console.log("apnacollege"+123)
+
+// What are lengths of an empty string & a string with a single space.
+let str1 ='';
+let str2 = ' ';
+console.log(str1.length);
+console.log(str2.length);
